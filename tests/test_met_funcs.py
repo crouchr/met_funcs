@@ -2,7 +2,7 @@
 # Test met functions
 
 import pytest
-import met_funcs
+import met_funcs.met_funcs as met_funcs
 
 
 # ----------
@@ -112,5 +112,3 @@ def test_wind_deg_to_quadrant(wind_deg, expected):
 def wind_dir_to_quadrant(wind_dir, expected):
     wind_quadrant = met_funcs.wind_deg_to_quadrant(wind_dir)
     assert wind_quadrant == expected
-
-

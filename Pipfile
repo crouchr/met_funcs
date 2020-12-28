@@ -3,8 +3,15 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 name = "pypi"
 
+# My Python package repo on web.ermin
+[[source]]
+url = "http://192.168.1.102"
+verify_ssl = false
+name = "ermin"
+
 [packages]
 pytest = "*"
+met-funcs = {version="*", index="ermin"}
 
 [dev-packages]
 
